@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class urinary extends StatefulWidget {
-  const urinary({super.key});
+class ternary extends StatefulWidget {
+  const ternary({super.key});
 
   @override
-  State<urinary> createState() => _urinaryState();
+  State<ternary> createState() => _ternaryState();
 }
 
-class _urinaryState extends State<urinary> {
+class _ternaryState extends State<ternary> {
   int i=0;
   @override
   Widget build(BuildContext context) {
@@ -19,21 +19,21 @@ class _urinaryState extends State<urinary> {
           InkWell(
             onTap: (){
               i=0;
-             //  if(i==0)
-             //    {
-             //      i=1;
-             //    }
-             //  else if(i==1)
-             //    {
-             //      i=0;
-             //    }
+              //  if(i==0)
+              //    {
+              //      i=1;
+              //    }
+              //  else if(i==1)
+              //    {
+              //      i=0;
+              //    }
               setState(() {
 
               });
             },
             child: Container(height: 45,width: 250,
-            color:
-            i==1? Colors.grey:Colors.green,
+              color:
+              i==1? Colors.grey:Colors.green,
               child: Center(child: Text(i==1? 'Selected':'Unselected')),
               // if(i==0)
               // { Colors.purple; }
@@ -46,7 +46,7 @@ class _urinaryState extends State<urinary> {
             onTap: (){
               i=1;
               setState(() {
-                
+
               });
             },
             child: Container(

@@ -33,7 +33,7 @@ class _ternaryState extends State<ternary> {
             },
             child: Container(height: 45,width: 250,
               color:
-              i==1? Colors.grey:Colors.green,
+              i==0? Colors.green:Colors.grey,
               child: Center(child: Text(i==1? 'Selected':'Unselected')),
               // if(i==0)
               // { Colors.purple; }
@@ -52,7 +52,7 @@ class _ternaryState extends State<ternary> {
             child: Container(
               height: 45,width: 250,
               color:
-              i==2? Colors.grey:Colors.green,
+              i==1? Colors.green:Colors.grey,
               child: Center(child: Text(i==2? 'Selected':'Unselected')),
             ),
           ),
@@ -65,7 +65,7 @@ class _ternaryState extends State<ternary> {
             },
             child: Container(
               height: 45,width: 250,
-              color: i==0? Colors.grey:Colors.green,
+              color: i==2? Colors.green:Colors.grey,
               child: Center(child: Text(i==0? 'Selected':'Unselected')),
             ),),
         ],
